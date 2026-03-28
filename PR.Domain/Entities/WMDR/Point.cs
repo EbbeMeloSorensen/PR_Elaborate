@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PR.Domain.Entities.WMDR
+﻿namespace PR.Domain.Entities.WMDR
 {
     public class Point : GeospatialLocation
     {

@@ -1,5 +1,3 @@
-using System;
-
 namespace PR.Domain.Entities.C2IEDM.Geometry
 {
     public class AbsolutePoint : Point

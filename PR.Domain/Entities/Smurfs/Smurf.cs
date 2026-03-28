@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PR.Domain.Entities.Smurfs
+﻿namespace PR.Domain.Entities.Smurfs
 {
     public class Smurf
     {

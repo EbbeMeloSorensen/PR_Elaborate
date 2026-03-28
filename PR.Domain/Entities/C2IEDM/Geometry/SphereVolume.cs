@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PR.Domain.Entities.C2IEDM.Geometry
+﻿namespace PR.Domain.Entities.C2IEDM.Geometry
 {
     public class SphereVolume : GeometricVolume
     {

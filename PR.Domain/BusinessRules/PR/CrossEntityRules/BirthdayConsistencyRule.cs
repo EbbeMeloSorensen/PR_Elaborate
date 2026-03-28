@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Craft.Domain;
+﻿using Craft.Domain;
 using PR.Domain.Entities.PR;
 
 namespace PR.Domain.BusinessRules.PR.CrossEntityRules

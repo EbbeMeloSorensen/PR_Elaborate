@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Craft.Domain;
-using PR.Domain.Entities.C2IEDM.ObjectItems;
+﻿using Craft.Domain;
 
 namespace PR.Domain.Entities.PR
 {
