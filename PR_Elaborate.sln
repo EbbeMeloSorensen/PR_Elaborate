@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFramew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFrameworkCore.Helper", "PR.Persistence.EntityFrameworkCore.Helper\PR.Persistence.EntityFrameworkCore.Helper.csproj", "{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFrameworkCore.InMemory", "PR.Persistence.EntityFrameworkCore.InMemory\PR.Persistence.EntityFrameworkCore.InMemory.csproj", "{2182CA5E-38E0-47C9-82DF-2E636894E604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFrameworkCore.PostgreSQL", "PR.Persistence.EntityFrameworkCore.PostgreSQL\PR.Persistence.EntityFrameworkCore.PostgreSQL.csproj", "{EB1E04E9-6A79-49DA-A337-606ED6C94965}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2182CA5E-38E0-47C9-82DF-2E636894E604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2182CA5E-38E0-47C9-82DF-2E636894E604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2182CA5E-38E0-47C9-82DF-2E636894E604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2182CA5E-38E0-47C9-82DF-2E636894E604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB1E04E9-6A79-49DA-A337-606ED6C94965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB1E04E9-6A79-49DA-A337-606ED6C94965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB1E04E9-6A79-49DA-A337-606ED6C94965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB1E04E9-6A79-49DA-A337-606ED6C94965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
