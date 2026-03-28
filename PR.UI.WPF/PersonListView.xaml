@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="PR.UI.WPF.PersonListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PR.UI.WPF"
+             xmlns:viewModel="clr-namespace:PR.ViewModel;assembly=PR.ViewModel"
+             xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:utils="clr-namespace:Craft.UI.Utils;assembly=Craft.UI.Utils"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance viewModel:PersonListViewModel}">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <local:FindPeopleView Grid.Row="0" DataContext="{Binding FindPeopleViewModel}"/>
+
+        <Button Grid.Row="1" Content="Find" HorizontalAlignment="Right" Margin="1, 7, 1, 0" Width="75"
+                Command="{Binding FindPeopleCommand}"
+                CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+
+        <GroupBox Grid.Row="2" Header="Sorting">
+            <StackPanel>
+                <RadioButton Content="Name"
+                             IsChecked="{Binding Path=Sorting, Mode=TwoWay, Converter={StaticResource EnumMatchToBooleanConverter}, ConverterParameter=Name}"/>
+                <RadioButton Content="Created"
+                             IsChecked="{Binding Path=Sorting, Mode=TwoWay, Converter={StaticResource EnumMatchToBooleanConverter}, ConverterParameter=Created}"/>
+            </StackPanel>
+        </GroupBox>
+
+        <ListBox Grid.Row="3" Margin="1, 5, 1, 1" x:Name="PeopleListBox" SelectionMode="Extended"
+                 ItemsSource="{Binding PersonViewModels}" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Gray" >
+                        <Grid>
+                            <TextBlock Text="{Binding DisplayText}"
+                                       FontFamily="Segoe UI"
+                                       FontSize="12.3"
+                                       TextAlignment="Left"
+                                       HorizontalAlignment="Stretch"
+                                       VerticalAlignment="Center"/>
+                            <Canvas>
+                                <Rectangle Canvas.Right="2" Canvas.Top="2" Width="13" Height="13"
+                                           Stroke="Black" StrokeThickness="1" Fill="IndianRed"
+                                           Visibility="{Binding IsHistorical, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                            </Canvas>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <b:Interaction.Behaviors>
+                <utils:MultiSelectionBehavior SelectedItems="{Binding SelectedPersonViewModels}"/>
+            </b:Interaction.Behaviors>
+        </ListBox>
+    </Grid>
+</UserControl>

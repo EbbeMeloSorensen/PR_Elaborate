@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="PR.UI.WPF.ProspectiveUpdateDialogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PR.UI.WPF"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <RadioButton Margin="5" Content="Change takes place now"
+                         IsChecked="{Binding Path=ProspectiveUpdateType, Mode=TwoWay, Converter={StaticResource EnumMatchToBooleanConverter}, ConverterParameter=Now}"/>
+            <RadioButton Margin="5" Content="Change took place earlier"
+                         IsChecked="{Binding Path=ProspectiveUpdateType, Mode=TwoWay, Converter={StaticResource EnumMatchToBooleanConverter}, ConverterParameter=Earlier}"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="8,5,5,5" Text="Time of change:"/>
+                <TextBox Margin="5,5,5,5" Width="120" Text="{Binding TimeOfChange}" IsEnabled="{Binding TimeFieldEnabled}"/>
+            </StackPanel>
+            <Border BorderBrush="Red" BorderThickness="2" VerticalAlignment="Stretch"
+                    Visibility="{Binding DisplayGeneralError, Converter={StaticResource BooleanToVisibilityConverter}}" >
+                <TextBlock TextWrapping="WrapWithOverflow" Foreground="Red" VerticalAlignment="Stretch"
+                           Text="{Binding GeneralError}"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.Row="1" FlowDirection="RightToLeft" Orientation="Horizontal">
+            <Button Margin="5,5,0,5" Content="Cancel" Width="75"
+                    Command="{Binding CancelCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}">
+            </Button>
+            <Button Margin="5,5,0,5" Content="OK" Width="75" IsDefault="True"
+                    Command="{Binding OKCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

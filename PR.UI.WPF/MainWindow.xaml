@@ -1,0 +1,95 @@
+﻿<Window x:Class="PR.UI.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR.UI.WPF"
+        xmlns:logging="clr-namespace:Craft.UIElements.Logging;assembly=Craft.UIElements"
+        mc:Ignorable="d"
+        Title="{Binding MainWindowTitle}" 
+        Height="800" 
+        Width="1000"
+        WindowState="Maximized"
+        DataContext="{Binding Path=MainWindowViewModel, Source={StaticResource BootStrapper}}">
+
+    <Window.InputBindings>
+        <KeyBinding Modifiers="Control" Key="N" 
+                    Command="{Binding CreatePersonCommand}"
+                    CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+    </Window.InputBindings>
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Export Entire Dataset" Command="{Binding ExportPeopleCommand}"/>
+                <MenuItem Header="Export Selection as graphml" Command="{Binding ExportSelectionToGraphmlCommand}"/>
+                <MenuItem Header="_Import" Command="{Binding ImportPeopleCommand}" />
+                <Separator />
+                <MenuItem Header="_Options" Command="{Binding ShowOptionsDialogCommand}" />
+                <Separator />
+                <MenuItem Header="_Exit" Command="{Binding ExitCommand}" />
+            </MenuItem>
+            <MenuItem Header="_View">
+                <MenuItem IsCheckable="True" Header="Attribute Filter" 
+                          IsChecked="{Binding PersonListViewModel.FindPeopleViewModel.DisplayAttributeFilterSection}" />
+                <MenuItem IsCheckable="True" Header="Status Filter" 
+                          IsChecked="{Binding PersonListViewModel.FindPeopleViewModel.DisplayStatusFilterSection}" />
+                <Separator/>
+                <MenuItem IsCheckable="True" Header="Historical Time" 
+                          IsChecked="{Binding PersonListViewModel.FindPeopleViewModel.DisplayHistoricalTimeControls}"/>
+                <MenuItem IsCheckable="True" Header="Database Time"
+                          IsChecked="{Binding PersonListViewModel.FindPeopleViewModel.DisplayDatabaseTimeControls}"/>
+
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Clear repository" 
+                          Command="{Binding ClearRepositoryCommand}"
+                          CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+                <MenuItem Header="Reseed repository" 
+                          Command="{Binding ReseedRepositoryCommand}"
+                          CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+            </MenuItem>
+        </Menu>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="245"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row ="0" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                <Button Content="New.." Command="{Binding CreatePersonCommand}" 
+                        CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+                <Button Content="Delete" Command="{Binding SoftDeleteSelectedPeopleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                        ToolTip="&quot;Soft delete&quot;, i.e. person turns historical and can thus still be retrieved"/>
+                <Button Content="Erase" Command="{Binding HardDeleteSelectedPeopleCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"
+                        ToolTip="&quot;Hard delete&quot;, i.e. person can only be retrieved by going back in database time"/>
+            </StackPanel>
+
+            <local:PersonListView Grid.Row="1" Grid.Column="0" DataContext="{Binding PersonListViewModel}"/>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <local:PeoplePropertiesView Grid.Row="0" DataContext="{Binding PeoplePropertiesViewModel}"/>
+
+                <local:PersonPropertiesView Grid.Row="1" DataContext="{Binding PersonPropertiesViewModel}"/>
+            </Grid>
+
+            <Expander Header="Log" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" ExpandDirection="Up" IsExpanded="True">
+                <logging:LogView Height="200" DataContext="{Binding LogViewModel}"/>
+            </Expander>
+        </Grid>
+    </DockPanel>
+</Window>
