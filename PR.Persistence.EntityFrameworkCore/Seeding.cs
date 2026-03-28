@@ -22,10 +22,10 @@ namespace PR.Persistence.EntityFrameworkCore
                 out var personComments,
                 out var smurfs);
 
-            //context.Smurfs.AddRange(smurfs);
+            context.Smurfs.AddRange(smurfs);
 
             context.People.AddRange(people);
-            //context.PersonComments.AddRange(personComments);
+            context.PersonComments.AddRange(personComments);
 
             context.SaveChanges();
         }

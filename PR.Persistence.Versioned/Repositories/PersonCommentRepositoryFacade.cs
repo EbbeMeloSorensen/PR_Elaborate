@@ -14,11 +14,6 @@ namespace PR.Persistence.Versioned.Repositories
     {
         private static DateTime _maxDate;
 
-        static PersonCommentRepositoryFacade()
-        {
-            _maxDate = new DateTime(9999, 12, 31, 23, 59, 59, DateTimeKind.Utc);
-        }
-
         private UnitOfWorkFacade _unitOfWorkFacade;
         private bool _returnClonesInsteadOfRepositoryObjects = true;
 
@@ -31,6 +26,11 @@ namespace PR.Persistence.Versioned.Repositories
         private DateTime TimeOfChange => _unitOfWorkFacade.TimeOfChange ?? CurrentTime;
 
         public ILogger Logger { get; }
+
+        static PersonCommentRepositoryFacade()
+        {
+            _maxDate = new DateTime(9999, 12, 31, 23, 59, 59, DateTimeKind.Utc);
+        }
 
         public PersonCommentRepositoryFacade(
             ILogger logger,

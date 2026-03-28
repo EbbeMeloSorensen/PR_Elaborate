@@ -43,6 +43,7 @@ namespace PR.Persistence.Versioned
 
             People = new PersonRepositoryFacade(logger, this);
             PersonComments = new PersonCommentRepositoryFacade(logger, this);
+            PersonAssociations = new PersonAssociationRepositoryFacade(logger, this);
         }
 
         public void Clear()

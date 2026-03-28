@@ -609,6 +609,9 @@ namespace PR.ViewModel.GIS
 
             using (var unitOfWork = UnitOfWorkFactory.GenerateUnitOfWork())
             {
+                // Det her bør ikke være op til view modellen, så hellere kald Clear, men den skal så nok også være asynkron
+                await unitOfWork.PersonAssociations.Clear();
+                await unitOfWork.PersonComments.Clear();
                 await unitOfWork.People.Clear();
                 unitOfWork.Complete();
             }

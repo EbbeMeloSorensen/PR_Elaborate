@@ -31,7 +31,7 @@ namespace PR.Persistence.EntityFrameworkCore
         {
             Smurfs.Clear();
 
-            //PersonAssociations.Clear();
+            PersonAssociations.Clear();
             PersonComments.Clear();
             People.Clear();
         }
