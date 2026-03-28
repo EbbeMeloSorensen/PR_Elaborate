@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFramew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFrameworkCore.SqlServer", "PR.Persistence.EntityFrameworkCore.SqlServer\PR.Persistence.EntityFrameworkCore.SqlServer.csproj", "{68B5A38E-1645-4DFE-9D2E-06C098233CE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.APIClient", "PR.Persistence.APIClient\PR.Persistence.APIClient.csproj", "{EB32C782-F8B3-4D60-8DB7-F7022ED08927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{68B5A38E-1645-4DFE-9D2E-06C098233CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68B5A38E-1645-4DFE-9D2E-06C098233CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68B5A38E-1645-4DFE-9D2E-06C098233CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB32C782-F8B3-4D60-8DB7-F7022ED08927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB32C782-F8B3-4D60-8DB7-F7022ED08927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB32C782-F8B3-4D60-8DB7-F7022ED08927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB32C782-F8B3-4D60-8DB7-F7022ED08927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
