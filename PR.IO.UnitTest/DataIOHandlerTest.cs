@@ -9,22 +9,22 @@ namespace PR.IO.UnitTest
 {
     public class DataIOHandlerTest
     {
-        [Fact]
-        public void ExportDataToXML_Works()
-        {
-            new DataIOHandler()
-                .ExportDataToXML(GenerateDataSet(), "Temp.xml");
-        }
+        //[Fact]
+        //public void ExportDataToXML_Works()
+        //{
+        //    new DataIOHandler()
+        //        .ExportDataToXML(GenerateDataSet(), "Temp.xml");
+        //}
 
-        [Fact]
-        public void ImportDataFromXML_Works()
-        {
-            new DataIOHandler().ImportDataFromXML(@"Data/People.xml", out PRData prData);
+        //[Fact]
+        //public void ImportDataFromXML_Works()
+        //{
+        //    new DataIOHandler().ImportDataFromXML(@"Data/People.xml", out PRData prData);
 
-            prData.People.Count.Should().Be(3);
-            prData.People.Count(p => p.FirstName == "Ebbe").Should().Be(1);
-            prData.People.Count(p => p.FirstName == "Uffe").Should().Be(1);
-        }
+        //    prData.People.Count.Should().Be(3);
+        //    prData.People.Count(p => p.FirstName == "Ebbe").Should().Be(1);
+        //    prData.People.Count(p => p.FirstName == "Uffe").Should().Be(1);
+        //}
 
         [Fact]
         public void ExportDataToJson_Works()

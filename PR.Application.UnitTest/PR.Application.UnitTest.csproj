@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PR.Application\PR.Application.csproj" />
+    <ProjectReference Include="..\PR.Persistence.EntityFrameworkCore.Sqlite\PR.Persistence.EntityFrameworkCore.Sqlite.csproj" />
   </ItemGroup>
 
   <ItemGroup>
