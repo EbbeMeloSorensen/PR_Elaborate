@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Denmark.gml" />
+    <None Remove="Data\DenmarkAndGreenland.gml" />
+    <None Remove="Data\mock_response.json" />
+    <None Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\Denmark.gml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\DenmarkAndGreenland.gml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\mock_response.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Craft.Logging.Log4Net" Version="1.0.18" />
+    <PackageReference Include="Craft.UIElements" Version="1.0.18" />
+    <PackageReference Include="StructureMap" Version="4.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PR.Persistence.EntityFrameworkCore.Sqlite\PR.Persistence.EntityFrameworkCore.Sqlite.csproj" />
+    <ProjectReference Include="..\PR.Persistence.Versioned\PR.Persistence.Versioned.csproj" />
+    <ProjectReference Include="..\PR.ViewModel.GIS\PR.ViewModel.GIS.csproj" />
+  </ItemGroup>
+
+</Project>

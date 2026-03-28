@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="PR.UI.WPF.GIS.ObservingFacilitiesDetailsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PR.UI.WPF.GIS"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:gis="clr-namespace:PR.ViewModel.GIS;assembly=PR.ViewModel.GIS"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance gis:ObservingFacilitiesDetailsViewModel}">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Skins/MainSkin.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <UserControl.Visibility>
+        <Binding Path="IsVisible" Converter="{StaticResource BooleanToVisibilityConverter}">
+            <Binding.ConverterParameter>
+                <system:Boolean>True</system:Boolean>
+            </Binding.ConverterParameter>
+        </Binding>
+    </UserControl.Visibility>
+
+    <Border BorderBrush="DarkGray" BorderThickness="1">
+        <Grid Background="#00000000">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Margin="3" Grid.Row="2" Grid.Column="0" Text="Name:"/>
+                <TextBox Margin="3" Grid.Row="2" Grid.Column="1"
+                         IsReadOnly="{Binding IsReadOnly}"
+                         Validation.ErrorTemplate="{StaticResource errorTemplate}"
+                         Text="{Binding SharedName, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Margin="3" Grid.Row="3" Grid.Column="0" Text="Date Established:"/>
+                <TextBox Margin="3" Grid.Row="3" Grid.Column="1" IsReadOnly="True"
+                         Text="{Binding SharedDateEstablishedAsText}"/>
+                <TextBlock Margin="3" Grid.Row="4" Grid.Column="0" Text="Date Closed:"/>
+                <TextBox Margin="3" Grid.Row="4" Grid.Column="1" IsReadOnly="True"
+                         Text="{Binding SharedDateClosedAsText}"/>
+                <Button Grid.Row ="6" Grid.Column="0" Grid.ColumnSpan="2" Margin="3,3,3,6" Width="50" Content="Update" HorizontalAlignment="Right"
+                        Command="{Binding ApplyChangesCommand}" />
+            </Grid>
+
+            <local:GeospatialLocationsView Grid.Row="1"  
+                                           DataContext="{Binding GeospatialLocationsViewModel}"/>
+        </Grid>
+    </Border>
+</UserControl>

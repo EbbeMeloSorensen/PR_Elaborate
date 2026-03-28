@@ -1,0 +1,31 @@
+﻿<Application x:Class="PR.UI.WPF.GIS.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PR.UI.WPF.GIS"
+             xmlns:gis="clr-namespace:PR.ViewModel.GIS;assembly=PR.ViewModel.GIS"
+             xmlns:dialogs="clr-namespace:Craft.UIElements.Dialogs;assembly=Craft.UIElements"
+             xmlns:viewModelBase="clr-namespace:Craft.ViewModels.Dialogs;assembly=Craft.ViewModels"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ObjectDataProvider x:Key="BootStrapper" ObjectType="local:BootStrapper"/>
+
+            <DataTemplate DataType="{x:Type viewModelBase:MessageBoxDialogViewModel}">
+                <dialogs:MessageBoxDialogView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type gis:CreateObservingFacilityDialogViewModel}">
+                <local:CreateObservingFacilityDialogView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type gis:DefineGeospatialLocationDialogViewModel}">
+                <local:DefineGeospatialLocationDialogView/>
+            </DataTemplate>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Craft.UIElements;component/Dialogs/Resources.xaml" />
+                <ResourceDictionary Source="/Craft.UIElements;component/Geometry2D/ScrollFree/Resources.xaml"/>
+                <ResourceDictionary Source="Skins/MainSkin.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
