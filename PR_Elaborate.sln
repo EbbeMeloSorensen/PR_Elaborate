@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFramew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.APIClient", "PR.Persistence.APIClient\PR.Persistence.APIClient.csproj", "{EB32C782-F8B3-4D60-8DB7-F7022ED08927}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.APIClient.DFOS", "PR.Persistence.APIClient.DFOS\PR.Persistence.APIClient.DFOS.csproj", "{279B04EB-3584-4F77-91C7-C9A49CD77531}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{EB32C782-F8B3-4D60-8DB7-F7022ED08927}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB32C782-F8B3-4D60-8DB7-F7022ED08927}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB32C782-F8B3-4D60-8DB7-F7022ED08927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{279B04EB-3584-4F77-91C7-C9A49CD77531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279B04EB-3584-4F77-91C7-C9A49CD77531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279B04EB-3584-4F77-91C7-C9A49CD77531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279B04EB-3584-4F77-91C7-C9A49CD77531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
