@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PR.UI.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "list"
+    }
+  }
+}
