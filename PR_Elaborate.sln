@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Domain.UnitTest", "PR.Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.IO.UnitTest", "PR.IO.UnitTest\PR.IO.UnitTest.csproj", "{66026DCD-1639-4326-B8EC-AB8FD4BDC083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence", "PR.Persistence\PR.Persistence.csproj", "{D4013E65-9302-4725-A2DA-5CF8775661C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{66026DCD-1639-4326-B8EC-AB8FD4BDC083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66026DCD-1639-4326-B8EC-AB8FD4BDC083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66026DCD-1639-4326-B8EC-AB8FD4BDC083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4013E65-9302-4725-A2DA-5CF8775661C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4013E65-9302-4725-A2DA-5CF8775661C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4013E65-9302-4725-A2DA-5CF8775661C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4013E65-9302-4725-A2DA-5CF8775661C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
