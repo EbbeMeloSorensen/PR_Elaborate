@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Craft.UI.Utils" Version="1.0.18" />
+    <PackageReference Include="Craft.ViewModel.Utils" Version="1.0.18" />
+    <PackageReference Include="Craft.ViewModels" Version="1.0.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PR.Application\PR.Application.csproj" />
+    <ProjectReference Include="..\PR.Persistence.Versioned\PR.Persistence.Versioned.csproj" />
+  </ItemGroup>
+
+</Project>
