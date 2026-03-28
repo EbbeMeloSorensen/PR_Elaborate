@@ -1,0 +1,40 @@
+﻿{
+  "People": [
+    {
+      "Id": 1,
+      "FirstName": "Ebbe",
+      "Surname": "Melo Sørensen",
+      "Address": "Danshøjvej 33",
+      "Created": "2020-06-20T12:46:04.113",
+      "Birthday": "1975-07-24T00:00:00",
+      "Category": "Familie"
+    },
+    {
+      "Id": 2,
+      "FirstName": "Ana",
+      "Surname": "Tayze Melo Sørensen",
+      "Address": "Danshøjvej 33",
+      "Created": "2020-06-20T12:46:04.113",
+      "Birthday": "1980-06-13T00:00:00",
+      "Category": "Familie"
+    },
+    {
+      "Id": 3,
+      "FirstName": "Anton",
+      "Surname": "Melo Sørensen",
+      "Address": "Danshøjvej 33",
+      "Created": "2020-06-20T12:46:04.113",
+      "Birthday": "2011-04-03T00:00:00",
+      "Category": "Familie"
+    },
+    {
+      "Id": 4,
+      "FirstName": "Cecilie",
+      "Surname": "Melo Sørensen",
+      "Address": "Danshøjvej 33",
+      "Created": "2020-06-20T12:46:04.113",
+      "Birthday": "2014-05-20T00:00:00",
+      "Category": "Familie"
+    }
+  ]
+}

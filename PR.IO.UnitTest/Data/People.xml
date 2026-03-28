@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PRData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<People>
+		<Person>
+			<Id>a4158a92-cca0-41f9-b27e-6a56dd4c2989</Id>
+			<FirstName>Ebbe</FirstName>
+			<Surname>Melo Sørensen</Surname>
+			<Nickname>Bebsen</Nickname>
+			<Address>Danshøjvej 33</Address>
+			<ZipCode>2500</ZipCode>
+			<City>Valby</City>
+			<Birthday>1980-06-12T22:00:00Z</Birthday>
+			<Category>Familie</Category>
+			<Description>Mig selv</Description>
+			<Dead>false</Dead>
+			<Created>2022-01-01T02:03:06Z</Created>
+		</Person>
+		<Person>
+			<Id>789d89aa-6e60-4bab-9d09-1076c78f0427</Id>
+			<FirstName>Ana Tayze</FirstName>
+			<Surname>Melo Sørensen</Surname>
+			<Birthday xsi:nil="true" />
+			<Dead xsi:nil="true" />
+			<Created>2023-08-05T09:20:22.8589674Z</Created>
+		</Person>
+		<Person>
+			<Id>3b7fc850-9177-466d-86a0-c40a16acee9c</Id>
+			<FirstName>Uffe</FirstName>
+			<Surname>Sørensen</Surname>
+			<Birthday xsi:nil="true" />
+			<Dead xsi:nil="true" />
+			<Created>2023-08-05T09:20:22.8589674Z</Created>
+		</Person>
+	</People>
+	<PersonAssociations>
+		<PersonAssociation>
+			<Id>f2931ee2-be6d-4ddb-bd18-53018f6a710d</Id>
+			<SubjectPersonId>3b7fc850-9177-466d-86a0-c40a16acee9c</SubjectPersonId>
+			<ObjectPersonId>a4158a92-cca0-41f9-b27e-6a56dd4c2989</ObjectPersonId>
+			<Description>is the brother of</Description>
+			<Created>2023-08-05T09:20:22.8589674Z</Created>
+		</PersonAssociation>
+		<PersonAssociation>
+			<Id>0042b72a-19d9-4805-9183-3ae705752c17</Id>
+			<SubjectPersonId>a4158a92-cca0-41f9-b27e-6a56dd4c2989</SubjectPersonId>
+			<ObjectPersonId>789d89aa-6e60-4bab-9d09-1076c78f0427</ObjectPersonId>
+			<Description>is married with</Description>
+			<Created>2023-08-05T09:20:22.8589674Z</Created>
+		</PersonAssociation>
+	</PersonAssociations>
+</PRData>

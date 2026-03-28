@@ -1,0 +1,46 @@
+﻿{
+  "People": [
+    {
+      "Id": "5f956b84-dc1d-4a06-b53f-24aa194071fb",
+      "FirstName": "Ebbe",
+      "Surname": "Melo Sørensen",
+      "Nickname": "Bebsen",
+      "Address": "Danshøjvej 33",
+      "ZipCode": "2500",
+      "City": "Valby",
+      "Birthday": "1980-06-12T22:00:00Z",
+      "Category": "Familie",
+      "Description": "Mig selv",
+      "Dead": false,
+      "Created": "2022-01-01T02:03:06Z"
+    },
+    {
+      "Id": "09aa09b8-b0e1-4223-ab9c-b1ea29c8b458",
+      "FirstName": "Ana Tayze",
+      "Surname": "Melo Sørensen",
+      "Created": "2023-08-05T09:20:22.84034Z"
+    },
+    {
+      "Id": "cac53c43-3e25-4fc6-8c41-74d0b1626f10",
+      "FirstName": "Uffe",
+      "Surname": "Sørensen",
+      "Created": "2023-08-05T09:20:22.84034Z"
+    }
+  ],
+  "PersonAssociations": [
+    {
+      "Id": "6adb20a7-2c65-4ddd-9212-cff8a28b4a0a",
+      "SubjectPersonId": "cac53c43-3e25-4fc6-8c41-74d0b1626f10",
+      "ObjectPersonId": "5f956b84-dc1d-4a06-b53f-24aa194071fb",
+      "Description": "is the brother of",
+      "Created": "2023-08-05T09:20:22.84034Z"
+    },
+    {
+      "Id": "d9587f98-307d-46df-a8fc-b7ec99ae2892",
+      "SubjectPersonId": "5f956b84-dc1d-4a06-b53f-24aa194071fb",
+      "ObjectPersonId": "09aa09b8-b0e1-4223-ab9c-b1ea29c8b458",
+      "Description": "is married with",
+      "Created": "2023-08-05T09:20:22.84034Z"
+    }
+  ]
+}
