@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.UnitTest", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFrameworkCore", "PR.Persistence.EntityFrameworkCore\PR.Persistence.EntityFrameworkCore.csproj", "{CAF1774C-7BDA-4DDA-8D8C-7B6D7203AAC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFrameworkCore.Sqlite", "PR.Persistence.EntityFrameworkCore.Sqlite\PR.Persistence.EntityFrameworkCore.Sqlite.csproj", "{33981914-3485-47C9-BD45-50118F0EEB39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.Persistence.EntityFrameworkCore.Helper", "PR.Persistence.EntityFrameworkCore.Helper\PR.Persistence.EntityFrameworkCore.Helper.csproj", "{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{CAF1774C-7BDA-4DDA-8D8C-7B6D7203AAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAF1774C-7BDA-4DDA-8D8C-7B6D7203AAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAF1774C-7BDA-4DDA-8D8C-7B6D7203AAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33981914-3485-47C9-BD45-50118F0EEB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33981914-3485-47C9-BD45-50118F0EEB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33981914-3485-47C9-BD45-50118F0EEB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33981914-3485-47C9-BD45-50118F0EEB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8B894D-9FEB-41EA-A1BE-9CDC725EFAD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
