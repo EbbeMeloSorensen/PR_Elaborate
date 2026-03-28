@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.UI.Console", "PR.UI.Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.ViewModel", "PR.ViewModel\PR.ViewModel.csproj", "{008CA2D0-6DFD-4D38-AC77-1097D85E5E8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PR.ViewModel.GIS", "PR.ViewModel.GIS\PR.ViewModel.GIS.csproj", "{11B95C48-D087-4BDB-B9C4-13219A70EC9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{008CA2D0-6DFD-4D38-AC77-1097D85E5E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{008CA2D0-6DFD-4D38-AC77-1097D85E5E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{008CA2D0-6DFD-4D38-AC77-1097D85E5E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B95C48-D087-4BDB-B9C4-13219A70EC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B95C48-D087-4BDB-B9C4-13219A70EC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B95C48-D087-4BDB-B9C4-13219A70EC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B95C48-D087-4BDB-B9C4-13219A70EC9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
