@@ -1,0 +1,29 @@
+NB: FIrefox er god til at kigge på json responses fra API'er
+
+Disse queries er interessante:
+
+  Træk detaljer for en station med et bestemt guid:
+  http://dfos-api-dev.dmi.dk/collections/observing_facility/items/0192b969-690d-707e-bd1d-4b7c3f5272d5
+
+  Træk historik for en bestemt periode (i dette tilfælde alt hvad der haves) for stationen med stationdid 1006
+  http://dfos-api-dev.dmi.dk/collections/observing_facility/items?identifier=dmi%2C1006&datetime=..%2F..
+
+  Træk alle stationer og operer med en page size på 100 i stedet for default, som er 50
+  http://dfos-api-dev.dmi.dk/collections/observing_facility/items?limit=100
+
+  Træk alle stationer og operer med en page size på 100 i stedet for default, som er 50
+  http://dfos-api-dev.dmi.dk/collections/observing_facility/items?limit=100&datetime=../..
+
+  ...hvofor er det nu lige at man skriver / i det ene tilfælde og %2F i det andet?
+
+Scenarie:
+  1) Lav en ny station ved navn Bamse (med start fra år 2000)
+     Send et Post request
+  2) Indiker, at stationen har ændret navn til Kylling i år 2024-01-01
+     Send et Put request
+  3) Korriger indtastningen af Kylling, så det igen fremgår, at stationen har heddet Bamse siden 2000
+     Send et Put request, hvor bodyen kun indeholder én detail. Her skal man imidlertid også bruge dens såkaldte ETag,
+     som man kan se i Json, hvis man skifter til tabben "Headers". Ideen er, at man læser detaljer for en station, så
+     man får dens ETag. Så sender man et put request, som omfatter en header med en key ved navn "If-Match", som skal
+     have en string værdi, der udtrykker ETagget, f.eks. "1"
+

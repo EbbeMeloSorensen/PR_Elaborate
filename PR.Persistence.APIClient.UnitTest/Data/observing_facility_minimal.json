@@ -1,0 +1,31 @@
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            0,
+            0
+        ]
+    },
+    "properties": {
+        "objectType": "ObservingFacility",
+        "details": {
+            "[2000-01-01T00:00:00Z,)": {
+                "facilityName": "Bamses Teststation"
+            }
+        },
+        "identifiers": [
+            {
+                "identifierType": {
+                    "uri": "http://codes.dmi.dk/dfos/IdentifierType/dmi",
+                    "notation": "dmi",
+                    "label": "DMI station no",
+                    "description": "Minimum-3-digit code without 0-prefix for observing stations assigned by the Danish Meteorological Institute (DMI)"
+                },
+                "identifierValue": "1006",
+                "validPeriod": "[2000-01-01T00:00:00Z,)",
+                "primaryWithinNamingScheme": true
+            }
+        ]
+    }
+}

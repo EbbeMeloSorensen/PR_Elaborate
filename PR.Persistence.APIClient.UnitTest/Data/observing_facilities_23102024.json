@@ -1,0 +1,441 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "01927649-c1e7-7a49-9eb3-6c49a1980ad1",
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.6029,
+                    56.3487,
+                    3.0
+                ]
+            },
+            "properties": {
+                "objectType": "ObservingFacility",
+                "details": {
+                    "[2024-10-11T11:30:00Z,)": {
+                        "facilityName": "Andeby Havn Opdateret (Test)",
+                        "facilityNameAlias": "Andeby Opdateret",
+                        "description": "Updated description for the facility.",
+                        "accessAddress": "Paradisæblevej 1000",
+                        "geoPositioningMethod": {
+                            "uri": "http://codes.wmo.int/wmdr/GeopositioningMethod/survey",
+                            "notation": "survey",
+                            "label": "Survey",
+                            "description": "Location determined using a geographic survey."
+                        },
+                        "facilityHeightAmsl": 1.0,
+                        "elevationAngles": {
+                            "N": 2,
+                            "NE": 3,
+                            "E": 4,
+                            "SE": 5,
+                            "S": 6,
+                            "SW": 7,
+                            "W": 8,
+                            "NW": 9
+                        },
+                        "elevationAnglesLeeIndex": 21.3,
+                        "elevationAnglesComment": "Example comment",
+                        "facilityType": {
+                            "uri": "http://codes.wmo.int/wmdr/FacilityType/landMobile",
+                            "notation": "landMobile",
+                            "label": "Land (mobile)",
+                            "description": "Station/platform on solid terrain, moving around"
+                        },
+                        "dmiFacilityType": {
+                            "uri": "http://codes.dmi.dk/dfos/DmiFacilityType/Pluvio",
+                            "notation": "Pluvio",
+                            "label": "Pluvio",
+                            "description": "Pluvio"
+                        },
+                        "facilityOperatingStatus": {
+                            "uri": "http://codes.dmi.dk/dfos/FacilityOperatingStatusType/testing",
+                            "notation": "testing",
+                            "label": "Testing / commissioning",
+                            "description": "The facility is deployed for testing purposes and the information provided may not be reliable."
+                        },
+                        "legalOwnerOrg": {
+                            "uri": "http://codes.dmi.dk/dfos/OrganisationType/novafos",
+                            "notation": "novafos",
+                            "label": "Novafos A/S",
+                            "description": "Novafos A/S"
+                        },
+                        "dataOwnerOrg": {
+                            "uri": "http://codes.dmi.dk/dfos/OrganisationType/novafos",
+                            "notation": "novafos",
+                            "label": "Novafos A/S",
+                            "description": "Novafos A/S"
+                        },
+                        "maintainerOrg": {
+                            "uri": "http://codes.dmi.dk/dfos/OrganisationType/dmi",
+                            "notation": "dmi",
+                            "label": "DMI",
+                            "description": "Danish Meteorological Institute (Danmarks Meteorologiske Institut)"
+                        },
+                        "legacySmsOwner": {
+                            "uri": "http://codes.dmi.dk/dfos/SmsOwnerType/harboursMunicipalities",
+                            "notation": "harboursMunicipalities",
+                            "label": "Harbours & municipalities",
+                            "description": "Harbours & municipalities"
+                        },
+                        "stationClass": {
+                            "uri": "http://codes.oscar-surface.wmo.int/StationClass/synopLand",
+                            "notation": "synopLand",
+                            "label": "Surface land meteorological station (SYNOP)",
+                            "description": "A station on land measuring humidity, pressure, temperature and horizontal wind speed and direction."
+                        },
+                        "wmoRegion": {
+                            "uri": "http://codes.wmo.int/wmdr/WMORegion/europe",
+                            "notation": "europe",
+                            "label": "Europe",
+                            "description": "Europe"
+                        },
+                        "wmoBufrRegion": {
+                            "uri": "http://codes.wmo.int/bufr4/codeflag/0-01-003/2",
+                            "notation": "2",
+                            "label": "Region II"
+                        },
+                        "timeZone": {
+                            "uri": "http://codes.wmo.int/wmdr/Timezone/2",
+                            "notation": "2",
+                            "label": "UTC+02:00",
+                            "description": "Timezone with a UTC offset of UTC+02:00 hours. Locations in this timezone include EET, Etc/GMT-2, Egypt, Europe/Tallinn, Europe/Sofia, Asia/Amman, Asia/Beirut, Europe/Riga, Europe/Tiraspol, Europe/Mariehamn, Europe/Nicosia, Europe/Uzhgorod, Africa/Bujumbura, Africa/Windhoek, Asia/Nicosia, Europe/Athens, Africa/Blantyre, Europe/Bucharest, Europe/Chisinau, Africa/Tripoli, Europe/Helsinki, Europe/Kaliningrad, Europe/Kiev, Asia/Jerusalem, Africa/Cairo, Asia/Tel_Aviv, Africa/Lubumbashi, Europe/Vilnius, Africa/Mbabane, Africa/Maseru, Africa/Maputo, Asia/Damascus, Africa/Kigali, Africa/Khartoum, Asia/Gaza, Israel, Africa/Juba, Africa/Johannesburg, Asia/Famagusta, Africa/Harare, Africa/Gaborone, Africa/Lusaka, Asia/Hebron, Libya, Europe/Zaporozhye."
+                        },
+                        "territory": {
+                            "uri": "http://codes.wmo.int/wmdr/TerritoryName/USA",
+                            "notation": "USA",
+                            "label": "United States (the)",
+                            "description": "United States (the)"
+                        },
+                        "isoCountry": {
+                            "uri": "http://codes.iso.org/iso-3166-1-alpha-3/DNK",
+                            "notation": "DNK",
+                            "label": "Denmark",
+                            "description": "Denmark"
+                        },
+                        "climateZone": {
+                            "uri": "http://codes.wmo.int/wmdr/ClimateZone/polarTundra",
+                            "notation": "polarTundra",
+                            "label": "ET",
+                            "description": "Polar - Tundra"
+                        },
+                        "population10km": 24000,
+                        "population50km": 62000,
+                        "geolocation": {
+                            "type": "Point",
+                            "coordinates": [
+                                11.6029,
+                                56.3487,
+                                3.0
+                            ]
+                        }
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/dmi",
+                            "notation": "dmi",
+                            "label": "DMI station no",
+                            "description": "Minimum-3-digit code without 0-prefix for observing stations assigned by the Danish Meteorological Institute (DMI)"
+                        },
+                        "identifierValue": "5906",
+                        "validPeriod": "[2024-10-10T11:30:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/sms",
+                            "notation": "sms",
+                            "label": "DMI Station Management System guid",
+                            "description": "DMI Station Management System (SMS) internal identifier, guid, expressed and formatted as a UUID."
+                        },
+                        "identifierValue": "4041E5A2-B4D1-488F-8ADB-97ADA77FB77C",
+                        "validPeriod": "[2024-10-10T11:30:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/statid",
+                            "notation": "statid",
+                            "label": "StatDb identifier",
+                            "description": "Minimum 4 digit code without 0-prefix from DMI StatDb."
+                        },
+                        "identifierValue": "590699",
+                        "validPeriod": "[2024-10-10T11:30:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/svk",
+                            "notation": "svk",
+                            "label": "SVK station identifier",
+                            "description": "SVK station identifier proprietary to SVK stations. Sometimes overlap with DMI ID, minimum 3-digit-code."
+                        },
+                        "identifierValue": "5906",
+                        "validPeriod": "[2024-10-10T11:30:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": "0192957c-0b15-71a8-98e6-b777a44feb98",
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.120379,
+                    56.289852
+                ]
+            },
+            "properties": {
+                "objectType": "ObservingFacility",
+                "details": {
+                    "[2023-08-03T10:00:00Z,)": {
+                        "facilityName": "Karup Vest (Test)",
+                        "accessAddress": "Herningvej 30, 7470 Karup",
+                        "facilityHeightAmsl": 51.0,
+                        "elevationAngles": {
+                            "N": 10,
+                            "NE": 12,
+                            "E": 14,
+                            "SE": 16,
+                            "S": 2,
+                            "SW": 4,
+                            "W": 6,
+                            "NW": 8
+                        },
+                        "elevationAnglesLeeIndex": 8,
+                        "dmiFacilityType": {
+                            "uri": "http://codes.dmi.dk/dfos/DmiFacilityType/Pluvio",
+                            "notation": "Pluvio",
+                            "label": "Pluvio",
+                            "description": "Pluvio"
+                        },
+                        "facilityOperatingStatus": {
+                            "uri": "http://codes.dmi.dk/dfos/FacilityOperatingStatusType/operational",
+                            "notation": "operational",
+                            "label": "Operational",
+                            "description": "The facility is declared operational and subject to routine maintenance."
+                        },
+                        "legacySmsOwner": {
+                            "uri": "http://codes.dmi.dk/dfos/SmsOwnerType/dmi",
+                            "notation": "dmi",
+                            "label": "DMI",
+                            "description": "Danish Meteorological Institute (Danmarks Meteorologiske Institut)"
+                        },
+                        "isoCountry": {
+                            "uri": "http://codes.iso.org/iso-3166-1-alpha-3/DNK",
+                            "notation": "DNK",
+                            "label": "Denmark",
+                            "description": "Denmark"
+                        },
+                        "geolocation": {
+                            "type": "Point",
+                            "coordinates": [
+                                9.120379,
+                                56.289852
+                            ]
+                        }
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/dmi",
+                            "notation": "dmi",
+                            "label": "DMI station no",
+                            "description": "Minimum-3-digit code without 0-prefix for observing stations assigned by the Danish Meteorological Institute (DMI)"
+                        },
+                        "identifierValue": "5126",
+                        "validPeriod": "[2021-01-26T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/wigos",
+                            "notation": "wigos",
+                            "label": "WMO WIGOS id",
+                            "description": "World Meteorological Organization (WMO) WIGOS identifier scheme. This identifier can be used for Observing Facilities (prefix '0'), Equipments (prefix '1'), and more, but only prefix '0' is officially defined by WMO as of 2023."
+                        },
+                        "identifierValue": "0-208-0-05126",
+                        "validPeriod": "[2021-01-26T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/wmo",
+                            "notation": "wmo",
+                            "label": "WMO identifier (deprecated)",
+                            "description": "5-digit code for observing stations. Superseded by WIGOS Identifier scheme."
+                        },
+                        "identifierValue": "05126",
+                        "validPeriod": "[2021-01-26T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/sms",
+                            "notation": "sms",
+                            "label": "DMI Station Management System guid",
+                            "description": "DMI Station Management System (SMS) internal identifier, guid, expressed and formatted as a UUID."
+                        },
+                        "identifierValue": "10DA1734-B112-44AE-B30A-C1E0A2862FAA",
+                        "validPeriod": "[2021-01-26T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/statid",
+                            "notation": "statid",
+                            "label": "StatDb identifier",
+                            "description": "Minimum 4 digit code without 0-prefix from DMI StatDb."
+                        },
+                        "identifierValue": "512620",
+                        "validPeriod": "[2021-01-26T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": "01929a81-f5e4-753f-8bbb-009158af7e50",
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.10736043,
+                    57.57048816
+                ]
+            },
+            "properties": {
+                "objectType": "ObservingFacility",
+                "details": {
+                    "[2023-05-25T10:00:00Z,)": {
+                        "facilityName": "Uggerby",
+                        "accessAddress": "Tolstrupvej 1, Uggerby, 9800 Hjørring",
+                        "facilityHeightAmsl": 8,
+                        "elevationAngles": {
+                            "N": 40,
+                            "NE": 12,
+                            "E": 11,
+                            "SE": 9,
+                            "S": 4,
+                            "SW": 3,
+                            "W": 9,
+                            "NW": 15
+                        },
+                        "elevationAnglesLeeIndex": 9,
+                        "elevationAnglesComment": "source: SMS.",
+                        "dmiFacilityType": {
+                            "uri": "http://codes.dmi.dk/dfos/DmiFacilityType/Pluvio",
+                            "notation": "Pluvio",
+                            "label": "Pluvio",
+                            "description": "Pluvio"
+                        },
+                        "facilityOperatingStatus": {
+                            "uri": "http://codes.dmi.dk/dfos/FacilityOperatingStatusType/operational",
+                            "notation": "operational",
+                            "label": "Operational",
+                            "description": "The facility is declared operational and subject to routine maintenance."
+                        },
+                        "legacySmsOwner": {
+                            "uri": "http://codes.dmi.dk/dfos/SmsOwnerType/dmi",
+                            "notation": "dmi",
+                            "label": "DMI",
+                            "description": "Danish Meteorological Institute (Danmarks Meteorologiske Institut)"
+                        },
+                        "isoCountry": {
+                            "uri": "http://codes.iso.org/iso-3166-1-alpha-3/DNK",
+                            "notation": "DNK",
+                            "label": "Denmark",
+                            "description": "Denmark"
+                        },
+                        "geolocation": {
+                            "type": "Point",
+                            "coordinates": [
+                                10.10736043,
+                                57.57048816
+                            ]
+                        }
+                    }
+                },
+                "identifiers": [
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/dmi",
+                            "notation": "dmi",
+                            "label": "DMI station no",
+                            "description": "Minimum-3-digit code without 0-prefix for observing stations assigned by the Danish Meteorological Institute (DMI)"
+                        },
+                        "identifierValue": "5005",
+                        "validPeriod": "[2009-12-16T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/wigos",
+                            "notation": "wigos",
+                            "label": "WMO WIGOS id",
+                            "description": "World Meteorological Organization (WMO) WIGOS identifier scheme. This identifier can be used for Observing Facilities (prefix '0'), Equipments (prefix '1'), and more, but only prefix '0' is officially defined by WMO as of 2023."
+                        },
+                        "identifierValue": "0-208-0-05005",
+                        "validPeriod": "[2009-12-16T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/wmo",
+                            "notation": "wmo",
+                            "label": "WMO identifier (deprecated)",
+                            "description": "5-digit code for observing stations. Superseded by WIGOS Identifier scheme."
+                        },
+                        "identifierValue": "05005",
+                        "validPeriod": "[2009-12-16T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/sms",
+                            "notation": "sms",
+                            "label": "DMI Station Management System guid",
+                            "description": "DMI Station Management System (SMS) internal identifier, guid, expressed and formatted as a UUID."
+                        },
+                        "identifierValue": "290050C4-AE1B-4E40-96BD-9D17C8F1981F",
+                        "validPeriod": "[2009-12-16T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    },
+                    {
+                        "identifierType": {
+                            "uri": "http://codes.dmi.dk/dfos/IdentifierType/statid",
+                            "notation": "statid",
+                            "label": "StatDb identifier",
+                            "description": "Minimum 4 digit code without 0-prefix from DMI StatDb."
+                        },
+                        "identifierValue": "500520",
+                        "validPeriod": "[2009-12-16T00:00:00Z,)",
+                        "primaryWithinNamingScheme": true
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "href": "http://dfos-api-prod.dmi.dk/collections/observing_facility/items",
+            "rel": "self",
+            "type": "application/geo+json",
+            "title": "Link to this set of results"
+        },
+        {
+            "href": "http://dfos-api-prod.dmi.dk/collections/observing_facility/items?pageOffset=01929a81-f5e4-753f-8bbb-009158af7e50",
+            "rel": "next",
+            "type": "application/geo+json",
+            "title": "Link to next set of results"
+        }
+    ]
+}
