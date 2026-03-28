@@ -19,7 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PR.Persistence.EntityFrameworkCore.PostgreSQL\PR.Persistence.EntityFrameworkCore.PostgreSQL.csproj" />
     <ProjectReference Include="..\PR.Persistence.EntityFrameworkCore.Sqlite\PR.Persistence.EntityFrameworkCore.Sqlite.csproj" />
+    <ProjectReference Include="..\PR.Persistence.EntityFrameworkCore.SqlServer\PR.Persistence.EntityFrameworkCore.SqlServer.csproj" />
   </ItemGroup>
 
 </Project>
