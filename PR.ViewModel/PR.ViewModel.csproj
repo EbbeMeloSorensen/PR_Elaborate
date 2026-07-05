@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Craft.UI.Utils" Version="1.0.18" />
-    <PackageReference Include="Craft.ViewModel.Utils" Version="1.0.18" />
-    <PackageReference Include="Craft.ViewModels" Version="1.0.18" />
+    <PackageReference Include="Craft.UI.Utils" Version="1.0.33" />
+    <PackageReference Include="Craft.ViewModel.Utils" Version="1.0.33" />
+    <PackageReference Include="Craft.ViewModels" Version="1.0.33" />
   </ItemGroup>
 
   <ItemGroup>
